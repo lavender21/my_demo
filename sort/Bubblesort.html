@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>可视化冒泡排序</title>
+	<style>
+		.box{
+			width:1000px;
+			height:600px;
+			margin:auto;
+		}
+		.view{
+			width:1000px;
+			height:500px;
+			border:1px solid #aaa;
+			border-radius: 10px;
+		}
+		.opt{
+			width:800px;
+			height:50px;
+			margin: 8px 0px;
+			padding:20px 100px;
+			border:2px solid #999;
+			border-radius: 10px;
+		}
+		.view h2{
+			text-align:center;
+		}
+		.view_pic{
+			width:840px;
+			height:360px;
+			background: #eee;
+			margin: auto;
+			padding:20px;
+			display: flex;
+			align-items:flex-end;
+			justify-content:center;
+		}
+
+		.opt button{
+			width:90px;
+			height:35px;
+			border-radius: 10px;
+			background:#e65;
+			font-family: '微软雅黑';
+			color:#fff;
+
+			transition:all .5s ease;
+		}
+		.opt input{
+			width:120px;
+			height:30px;
+			border-radius: 10px;
+		}
+		.opt button:hover{
+			background: #e34;
+			cursor:pointer;
+		}
+
+		.pic{
+			width:12px;
+			margin:1px;
+			background: #6688ff;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="view">
+			<h2>排序算法可视化</h2>
+			<div class="view_pic" id="view_pic">
+				
+			</div>
+		</div>
+		<div class="opt">
+			<input type="text">
+			<button id="random">随机产生</button>
+			<button id="Bubblesort">冒泡排序</button>
+			<button id="Quicksort">快速排序</button>
+			<button id="">选择排序</button>
+			<button id="">插入排序</button>
+			<button id="">归并排序</button>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/Bubble.js"></script>
+</body>
+</html>
